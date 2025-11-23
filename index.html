@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MegaMart</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+  <body>
+
+    
+    <!-- Top Bar -->
+    <div class="top-bar py-2 d-none d-lg-block">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>Welcome to worldwide Megamart!</div>
+          <div class="d-flex gap-4">
+            <span><i class="bi bi-geo-alt me-1"></i> Deliver to: <strong>423651</strong></span>
+            <span class="border-start ps-3 ms-n2"><i class="bi bi-truck me-1"></i> Track your order</span>
+            <span class="border-start ps-3 ms-n2"><i class="bi bi-tag me-1"></i> All Offers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-white sticky-top shadow-sm py-3">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <!-- Logo -->
+          <div class="col-6 col-lg-2">
+            <div class="d-flex align-items-center gap-2">
+              <div class="bg-primary-custom rounded p-1 d-flex align-items-center justify-content-center" style="width: 32px; height: 32px;">
+                <i class="bi bi-list text-white fs-5"></i>
+              </div>
+              <span class="fw-bold fs-4 text-primary-custom tracking-tight">MegaMart</span>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="col-12 col-lg-6 order-3 order-lg-2">
+            <div class="search-container d-flex align-items-center overflow-hidden p-1">
+              <div class="d-none d-md-flex align-items-center px-3 text-primary-custom bg-light-subtle border-end" style="height: 36px; cursor: pointer; font-size: 13px;">
+                <i class="bi bi-list me-2"></i>
+                
+              </div>
+              <input type="text" class="form-control search-input px-3" placeholder="Search essentials, groceries and more...">
+              <button class="btn text-primary-custom"><i class="bi bi-search fs-5"></i></button>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div class="col-6 col-lg-4 order-2 order-lg-3 d-flex justify-content-end align-items-center gap-4">
+            <div class="d-flex align-items-center gap-2" style="cursor: pointer;">
+              <i class="bi bi-person fs-4 text-secondary"></i>
+              <div class="d-none d-xl-block lh-sm">
+                <span class="d-block fs-8 text-muted">Sign Up/Sign In</span>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 border-start ps-4" style="cursor: pointer;">
+              <div class="position-relative">
+                <i class="bi bi-cart fs-4 text-secondary"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger p-1" style="font-size: 10px; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;">3</span>
+              </div>
+              <div class="d-none d-xl-block lh-sm">
+                <span class="d-block fs-8 text-muted">Cart</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <div class="border-bottom bg-white d-none d-lg-block">
+      <div class="container">
+        <ul class="nav py-2 align-items-center">
+          <li class="nav-item me-3">
+            <a href="#" class="nav-pill-custom d-flex align-items-center text-decoration-none">
+              <i class="bi bi-grid-fill me-2"></i> Groceries
+            </a>
+
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link-custom">Premium Fruits <i class="bi bi-chevron-down fs-8 opacity-50"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link-custom">Home & Kitchen <i class="bi bi-chevron-down fs-8 opacity-50"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link-custom">Fashion <i class="bi bi-chevron-down fs-8 opacity-50"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link-custom">Electronics <i class="bi bi-chevron-down fs-8 opacity-50"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link-custom">Beauty <i class="bi bi-chevron-down fs-8 opacity-50"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link-custom">Home Improvement <i class="bi bi-chevron-down fs-8 opacity-50"></i></a></li>
+          <li class="nav-item"><a href="#" class="nav-link-custom">Sports, Toys & Luggage <i class="bi bi-chevron-down fs-8 opacity-50"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container py-4">
+      
+      <!-- Hero Section -->
+      <div class="hero-section mb-5">
+        <div class="hero-circle-1"></div>
+        <div class="hero-circle-2"></div>
+        
+        <div class="row h-100 align-items-center p-4 p-md-5 position-relative z-2 lex-column flex-md-row">
+          <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+            
+            <span class="text-info fw-medium text-uppercase ls-1 fs-7 mb-2 d-block">Best Deal Online on smart watches</span>
+            <h1>SMART WEARABLE.</h1>
+            <p class="fs-3 fw-light mb-4">UP to 80% OFF</span></p>
+             <!-- Left Button -->
+        <button class="position-absolute start-0 top-50 translate-middle-y p-0 border-0 bg-white rounded-circle shadow d-none d-md-flex justify-content-center align-items-center" 
+        style="width: 50px; height: 50px; z-index: 100; transform: translateX(-50%);">
+        <i class="bi bi-chevron-left text-primary fs-5"></i>
+       </button>
+             <!-- Right Button -->
+            <button class="position-absolute end-0 top-50 translate-middle-y p-0 border-0 bg-white rounded-circle shadow d-none d-md-flex justify-content-center align-items-center" 
+        style="width: 50px; height: 50px; z-index: 100; transform: translateX(50%);">
+    <i class="bi bi-chevron-right text-primary fs-5"></i>
+    </button>
+
+    <div class="row h-100 align-items-center p-4 p-md-5 position-relative z-2">
+    </div>
+    <div class="banner-container position-relative" style="height: 40px;"></div>
+            
+            
+            <!-- Carousel Indicators -->
+            <div class="d-flex justify-content-center justify-content-md-start gap-2">
+              <span class="rounded-circle bg-white" style="width: 10px; height: 10px;"></span>
+              <span class="rounded-circle bg-white opacity-50" style="width: 10px; height: 10px;"></span>
+              <span class="rounded-circle bg-white opacity-50" style="width: 10px; height: 10px;"></span>
+            </div>
+          </div>
+          
+          <div class="col-md-6 d-flex justify-content-center justify-content-md-end position-relative">
+            <div class="position-relative">
+               <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=500&q=80" alt="Smart Watch" class="hero-image rounded-4" width="300">
+               <div class="position-absolute top-0 end-0 bg-warning rounded-circle d-flex align-items-center justify-content-center fw-bold shadow" style="width: 70px; height: 70px; margin-top: -20px; margin-right: -20px; animation: bounce 2s infinite;">
+                 NEW
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smartphone Section -->
+      <div class="mb-5">
+        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
+          <h3 class="h5 fw-bold mb-0 position-relative d-inline-block pb-2" style="border-bottom: 2px solid var(--primary-blue); margin-bottom: -2px;">
+            Grab the best deal on <span class="text-primary-custom">Smartphones</span>
+          </h3>
+          <a href="#" class="fs-7 text-decoration-none text-secondary hover-primary">View All <i class="bi bi-chevron-right fs-8"></i></a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-3">
+          <!-- Card 1 -->
+          <div class="col">
+            <div class="product-card h-100">
+              <div class="discount-badge">56% OFF</div>
+              <div class="product-img-wrapper">
+                <img src="assets/mobile.jpeg" class="product-img" alt="Phone">
+              </div>
+              <div class="p-3">
+                <h5 class="fs-6 fw-600 mb-1 text-truncate">Galaxy S22 Ultra</h5>
+                <div class="d-flex align-items-end gap-2 mb-2">
+                  <span class="fw-bold">$35999</span>
+                  <span class="text-muted text-decoration-line-through fs-8">$70000</span>
+                </div>
+                <div class="border-top pt-2 text-success fs-8 fw-bold">
+                  Save - $32999
+                </div>
+                <button class="add-btn shadow-sm"><i class="bi bi-plus fs-4"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col">
+            <div class="product-card h-100">
+              <div class="discount-badge">30% OFF</div>
+              <div class="product-img-wrapper">
+                <img src="assets/mobile.jpeg" class="product-img" alt="Phone">
+              </div>
+              <div class="p-3">
+                <h5 class="fs-6 fw-600 mb-1 text-truncate">Galaxy M13 (4GB)</h5>
+                <div class="d-flex align-items-end gap-2 mb-2">
+                  <span class="fw-bold">$10499</span>
+                  <span class="text-muted text-decoration-line-through fs-8">$14999</span>
+                </div>
+                <div class="border-top pt-2 text-success fs-8 fw-bold">
+                  Save - $4500
+                </div>
+                <button class="add-btn shadow-sm"><i class="bi bi-plus fs-4"></i></button>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col">
+            <div class="product-card h-100">
+              <div class="discount-badge">50% OFF</div>
+              <div class="product-img-wrapper">
+                <img src="assets/mobile.jpeg" class="product-img" alt="Phone">
+              </div>
+              <div class="p-3">
+                <h5 class="fs-6 fw-600 mb-1 text-truncate">Galaxy M33 (5G)</h5>
+                <div class="d-flex align-items-end gap-2 mb-2">
+                  <span class="fw-bold">$16999</span>
+                  <span class="text-muted text-decoration-line-through fs-8">$24999</span>
+                </div>
+                <div class="border-top pt-2 text-success fs-8 fw-bold">
+                  Save - $8000
+                </div>
+                <button class="add-btn shadow-sm"><i class="bi bi-plus fs-4"></i></button>
+              </div>
+            </div>
+          </div>
+           <!-- Card 4 -->
+           <div class="col">
+            <div class="product-card h-100">
+              <div class="discount-badge">15% OFF</div>
+              <div class="product-img-wrapper">
+                <img src="assets/mobile.jpeg" class="product-img" alt="Phone">
+              </div>
+              <div class="p-3">
+                <h5 class="fs-6 fw-600 mb-1 text-truncate">iPhone 14 Pro</h5>
+                <div class="d-flex align-items-end gap-2 mb-2">
+                  <span class="fw-bold">$1199</span>
+                  <span class="text-muted text-decoration-line-through fs-8">$1399</span>
+                </div>
+                <div class="border-top pt-2 text-success fs-8 fw-bold">
+                  Save - $200
+                </div>
+                <button class="add-btn shadow-sm"><i class="bi bi-plus fs-4"></i></button>
+              </div>
+            </div>
+          </div>
+           <!-- Card 5 -->
+           <div class="col">
+            <div class="product-card h-100">
+              <div class="discount-badge">20% OFF</div>
+              <div class="product-img-wrapper">
+                <img src="assets/mobile.jpeg" class="product-img" alt="Phone">
+              </div>
+              <div class="p-3">
+                <h5 class="fs-6 fw-600 mb-1 text-truncate">Google Pixel 7</h5>
+                <div class="d-flex align-items-end gap-2 mb-2">
+                  <span class="fw-bold">$599</span>
+                  <span class="text-muted text-decoration-line-through fs-8">$749</span>
+                </div>
+                <div class="border-top pt-2 text-success fs-8 fw-bold">
+                  Save - $150
+                </div>
+                <button class="add-btn shadow-sm"><i class="bi bi-plus fs-4"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories Section -->
+      <div class="mb-5">
+        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
+          <h3 class="h5 fw-bold mb-0 position-relative d-inline-block pb-2" style="border-bottom: 2px solid var(--primary-blue); margin-bottom: -2px;">
+            Shop From <span class="text-primary-custom">Top Categories</span>
+          </h3>
+          <a href="#" class="fs-7 text-decoration-none text-secondary">View All <i class="bi bi-chevron-right fs-8"></i></a>
+        </div>
+
+        <div class="d-flex justify-content-between overflow-auto pb-3 gap-4 text-center">
+          <div class="category-item">
+            <div class="category-circle">
+                <img src="For_Responsive/assets/mobile.jpeg" alt="Mobile Category">
+            </div>
+            <span class="category-label">Mobile</span></div>
+
+           <div class="category-item">
+            <div class="category-circle">
+           <img src="For_Responsive/assets/t_cosmetics.jpeg" alt="Mobile Category">
+            </div>
+            <span class="category-label">Cosmetics</span>
+          </div>
+
+           <div class="category-item">
+            <div class="category-circle">
+                 <img src="assets/electronices.jpeg" alt="Mobile Category">
+            </div>
+            <span class="category-label">Electronics</span>
+          </div>
+
+           <div class="category-item">
+            <div class="category-circle">
+            <img src="assets/furniture.jpeg" alt="Furniture">
+            </div>
+            <span class="category-label">Furniture</span>
+          </div>
+
+           <div class="category-item">
+            <div class="category-circle">
+                <img src= "assets/watch.jpeg">
+            </div>
+            <span class="category-label">Watches</span>
+          </div>
+
+           <div class="category-item">
+            <div class="category-circle">
+                <img src="assets/decor.jpeg">
+            </div>
+            <span class="category-label">Decor</span>
+          </div>
+
+           <div class="category-item">
+            <div class="category-circle">
+                <img src="assets/accessories.jpeg">
+            </div>
+            <span class="category-label">Accessories</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brands Section -->
+      <div class="mb-5">
+         <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
+          <h3 class="h5 fw-bold mb-0 position-relative d-inline-block pb-2" style="border-bottom: 2px solid var(--primary-blue); margin-bottom: -2px;">
+            Top <span class="text-primary-custom">Electronics Brands</span>
+          </h3>
+          <a href="#" class="fs-7 text-decoration-none text-secondary">View All <i class="bi bi-chevron-right fs-8"></i></a>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="brand-card brand-card-dark">
+                    <div class="position-relative z-2">
+                        <span class="badge bg-secondary mb-2">IPHONE</span>
+                        <h4 class="fw-bold mb-1">UP to 30% OFF</h4>
+                        <p class="fs-7 opacity-75 mb-3">On best selling products</p>
+                        <button class="btn btn-light btn-sm rounded-pill fw-bold px-3">Shop Now</button>
+                    </div>
+                    <img src="assets/iphone.jpeg" class="position-absolute end-0 top-0 h-100 w-50 object-fit-cover opacity-50" style="mix-blend-mode: luminosity;" alt="Apple">
+                </div>
+            </div>
+            <div class="col-md-4">
+                 <div class="brand-card brand-card-yellow">
+                    <div class="position-relative z-2">
+                        <span class="badge bg-warning text-dark mb-2">REALME</span>
+                        <h4 class="fw-bold mb-1">UP to 40% OFF</h4>
+                        <p class="fs-7 opacity-75 mb-3">On best selling products</p>
+                        <button class="btn btn-dark btn-sm rounded-pill fw-bold px-3">Shop Now</button>
+                    </div>
+                     <img src="assets/real_me.jpeg" class="position-absolute end-0 top-0 h-100 w-50 object-fit-cover opacity-75" style="mix-blend-mode: multiply;" alt="Realme">
+                </div>
+            </div>
+            <div class="col-md-4">
+                 <div class="brand-card brand-card-orange">
+                    <div class="position-relative z-2">
+                        <span class="badge bg-danger mb-2">XIAOMI</span>
+                        <h4 class="fw-bold mb-1">UP to 50% OFF</h4>
+                        <p class="fs-7 opacity-75 mb-3">On best selling products</p>
+                        <button class="btn btn-dark btn-sm rounded-pill fw-bold px-3">Shop Now</button>
+                    </div>
+                     <img src="assets/xioami.jpeg" class="position-absolute end-0 top-0 h-100 w-50 object-fit-cover opacity-75" style="mix-blend-mode: multiply;" alt="Xiaomi">
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <!-- Daily Essentials -->
+       <div class="mb-5">
+        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-2">
+          <h3 class="h5 fw-bold mb-0 position-relative d-inline-block pb-2" style="border-bottom: 2px solid var(--primary-blue); margin-bottom: -2px;">
+            Daily <span class="text-primary-custom">Essentials</span>
+          </h3>
+          <a href="#" class="fs-7 text-decoration-none text-secondary hover-primary">View All <i class="bi bi-chevron-right fs-8"></i></a>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+          <!-- Item 1 -->
+          <div class="col">
+            <div class="product-card h-100">
+               <div class="discount-badge bg-secondary">33% OFF</div>
+               <div class="product-img-wrapper">
+                 <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?auto=format&fit=crop&w=300&q=80" class="product-img" alt="Apple">
+               </div>
+               <div class="p-3">
+                 <h6 class="fs-7 fw-600 mb-1">Fresh Apples (1kg)</h6>
+                 <div class="fw-bold">$3.99</div>
+               </div>
+            </div>
+          </div>
+           <!-- Item 2 -->
+           <div class="col">
+            <div class="product-card h-100">
+               <div class="discount-badge bg-secondary">20% OFF</div>
+               <div class="product-img-wrapper">
+                 <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=300&q=80" class="product-img" alt="Bread">
+               </div>
+               <div class="p-3">
+                 <h6 class="fs-7 fw-600 mb-1">Whole Wheat Bread</h6>
+                 <div class="fw-bold">$1.99</div>
+               </div>
+            </div>
+          </div>
+           <!-- Item 3 -->
+           <div class="col">
+            <div class="product-card h-100">
+               <div class="discount-badge bg-secondary">15% OFF</div>
+               <div class="product-img-wrapper">
+                 <img src="assets/organic_milk.jpeg" class="product-img" alt="Milk">
+               </div>
+               <div class="p-3">
+                 <h6 class="fs-7 fw-600 mb-1">Organic Milk (1L)</h6>
+                 <div class="fw-bold">$2.49</div>
+               </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+           <div class="col">
+            <div class="product-card h-100">
+               <div class="discount-badge bg-secondary">10% OFF</div>
+               <div class="product-img-wrapper">
+                 <img src="assets/tea_bag.jpeg" class="product-img" alt="Tea">
+               </div>
+               <div class="p-3">
+                 <h6 class="fs-7 fw-600 mb-1">Premium Tea Bags</h6>
+                 <div class="fw-bold">$5.99</div>
+               </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+           <div class="col">
+            <div class="product-card h-100">
+               <div class="discount-badge bg-secondary">25% OFF</div>
+               <div class="product-img-wrapper">
+                 <img src="assets/chocolate.png" class="product-img" alt="Chocolate">
+               </div>
+               <div class="p-3">
+                 <h6 class="fs-7 fw-600 mb-1">Dark Chocolate</h6>
+                 <div class="fw-bold">$4.50</div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+     <footer class="megamart-footer mt-5 pt-5 pb-4">
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h2 class="text-white fw-bold mb-4">MegaMart</h2>
+                
+                <h5 class="text-white fw-medium mb-3">Contact Us</h5>
+                
+                <div class="d-flex align-items-center mb-2">
+                    <i class="bi bi-whatsapp me-2 fs-5 text-white"></i>
+                    <div class="text-white">
+                        <small>WhatsApp</small><br>
+                        <p>+1 202-918-2132</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-center mb-4">
+                    <i class="bi bi-telephone-fill me-2 fs-5 text-white"></i>
+                    <div class="text-white">
+                        <small>Call Us</small><br>
+                        <p>+1 202-918-2132</p>
+                    </div>
+                </div>
+                
+            <h5 class="text-white fw-medium mb-3">Download App</h5>
+            <div class="d-flex gap-2">
+            <a href="#">
+            <img src="assets/app_store.png" 
+             class="app-download-badge rounded-3" 
+             alt="Download on the App Store" 
+             style="height: 60px; width: auto;"> </a>
+            <a href="#">
+            <img src="assets/google_play.jpg" 
+             class="app-download-badge rounded-3" 
+             alt="Get it on Google Play"
+             style="height: 60px; width: auto;"> </a>
+             </div>
+
+
+            </div>
+            
+                <div class="col-6 col-md-4 mb-4 mb-md-0">
+                <h5 class="footer-heading mb-4 pb-2">Most Popular Categories</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">Staples</a></li>
+                    <li><a href="#">Beverages</a></li>
+                    <li><a href="#">Personal Care</a></li>
+                    <li><a href="#">Home Care</a></li>
+                    <li><a href="#">Baby Care</a></li>
+                    <li><a href="#">Vegetables & Fruits</a></li>
+                    <li><a href="#">Snacks & Foods</a></li>
+                    <li><a href="#">Dairy & Bakery</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-6 col-md-4">
+                <h5 class="footer-heading mb-4 pb-2">Customer Services</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">E-waste Policy</a></li>
+                    <li><a href="#">Cancellation & Return Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="mt-5 mb-3">
+        <div class="text-center text-white-50 small">
+            &copy; 2022 All rights reserved. Reliance Retail Ltd.
+        </div>
+    </div>
+</footer>
+    
+
+  </body>
+</html>
+

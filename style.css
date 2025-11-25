@@ -63,10 +63,55 @@
         gap: 4px;
         text-decoration: none;
         transition: color 0.2s;
+
+     padding-top: 5px;   
+     padding-bottom: 5px; 
+     padding-left: 20px; 
+     padding-right: 20px; 
+     white-space: nowrap;
       }
+
+   .nav-item {
+    margin: 0 5px; 
+    padding: 0;
+    }
+
+
       .nav-link-custom:hover {
         color: var(--primary-blue);
       }
+
+
+/* Light Blue container for all dropdown menus */
+.menu-container {
+  background: #e8f1ff;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+/* Remove default UL background */
+.menu-box {
+  padding: 0 !important;
+  border: none !important;
+  background: transparent !important;
+}
+
+/* White card-like menu items */
+.menu-container .dropdown-item {
+  background: #ffffff;
+  margin: 6px 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: 0.2s;
+  font-size: 15px;
+}
+
+/* Hover effect: light blue + slide */
+.menu-container .dropdown-item:hover {
+  background: #dfe9ff;
+  color: #0d6efd;
+  transform: translateX(4px);
+}
 
       /* Hero Section */
       .hero-section {
@@ -277,12 +322,18 @@
 .megamart-footer {
     background-color: var(--footer-bg-blue);
     color: white;
-}
+    width: 100%;
+    
 
 
 .footer-heading {
     color: rgb(255, 255, 255);
     font-weight: 500;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
     
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     display: inline-block; 
@@ -320,4 +371,10 @@
 .rounded-3 {
     border-radius: 0.5rem !important;
 }
-      
+
+
+.megamart-footer {
+   
+    background-color: #007bff; 
+    width: 100%; 
+}
